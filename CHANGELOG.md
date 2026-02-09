@@ -1,6 +1,19 @@
 # Changelog
 
-All notable changes to this skill are documented here.
+## v1.0.2 (2026-02-09)
+
+### Fixed
+
+- Removed requirements.txt - skill uses Python stdlib only
+- Removed pip installation instructions from README.md
+- No external dependencies required
+
+## v1.0.1 (2026-02-09)
+
+### Fixed
+
+- Removed compiled .pyc files from repository
+- Added .gitignore to prevent pycache commits
 
 ## v1.0.0 (2026-02-07)
 
@@ -13,56 +26,24 @@ All notable changes to this skill are documented here.
 - Command-line interface (CLI) for terminal use
 - OpenClaw skill integration
 - Environment-based configuration (no hardcoded credentials)
-- Comprehensive documentation:
-  - Installation guide
-  - Radarr and Sonarr configuration
-  - Indexers setup (Jackett)
-  - Download clients configuration
-  - Media management settings
-  - Plex integration
-  - Seedbox setup guide
-  - Docker stack example
-  - Troubleshooting section
-- Quality profile support (4K, 1080p, 720p, SD)
-- Language profile support (English, French, Spanish, German, Multi)
-- Support for specific season/episode downloads
-- Queue and wanted list status commands
-- Multiple download client support (rtorrent, qBittorrent, Deluge)
+- Comprehensive documentation
+- Quality profile support
+- Language profile support
 - Docker-compatible configuration
 
 ### Features
 
-**Natural Language Commands:**
-- `Download Inception in 4K English`
-- `Download Supernatural season 4`
-- `Search for Avatar`
-- `Radarr status` / `Sonarr status`
-
-**CLI Commands:**
-- `radarr search <query>` - Search movies
-- `radarr download <tmdb_id>` - Add movie to queue
-- `radarr queue` - Show download queue
-- `sonarr search <query>` - Search series
-- `sonarr download <tvdb_id>` - Add series to queue
-- `sonarr season <tvdb_id> <number>` - Add specific season
-- `auto "<natural command>"` - Auto-parse any request
-
-### Configuration
-
-All settings via environment variables:
-- `RADARR_URL` / `RADARR_API_KEY`
-- `SONARR_URL` / `SONARR_API_KEY`
-- `RADARR_ROOT_FOLDER` / `SONARR_ROOT_FOLDER`
-- `RADARR_QUALITY_PROFILE` / `SONARR_QUALITY_PROFILE`
-- `RADARR_LANGUAGE_PROFILE` / `SONARR_LANGUAGE_PROFILE`
+Natural Language Commands:
+- Download Inception in 4K English
+- Download Supernatural season 4
+- Search for Avatar
+- Radarr status / Sonarr status
 
 ### Requirements
 
 - Python 3 (stdlib only, no pip dependencies)
 - Radarr v3+
 - Sonarr v3+
-- Jackett (optional, for indexers)
-- Any download client supported by Radarr/Sonarr
 
 ---
 
