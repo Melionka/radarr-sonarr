@@ -1,12 +1,19 @@
 # Changelog
 
+## v1.0.3 (2026-02-09)
+
+### Fixed
+
+- Removed git dependency from requirements.txt
+- Skill now truly uses Python stdlib only
+- No external pip packages required
+
 ## v1.0.2 (2026-02-09)
 
 ### Fixed
 
-- Removed requirements.txt - skill uses Python stdlib only
 - Removed pip installation instructions from README.md
-- No external dependencies required
+- Removed requests library from requirements.txt
 
 ## v1.0.1 (2026-02-09)
 
@@ -19,29 +26,24 @@
 
 ### Added
 
-- Initial release of the radarr-sonarr skill for OpenClaw
-- Natural language parsing for movie and TV series requests
-- Radarr API integration for movie downloads
-- Sonarr API integration for TV series downloads
-- Command-line interface (CLI) for terminal use
-- OpenClaw skill integration
-- Environment-based configuration (no hardcoded credentials)
+- Initial release: radarr-sonarr skill for OpenClaw
+- Natural language commands
+- Radarr/Sonarr API integration
+- CLI interface
+- Environment-based configuration
 - Comprehensive documentation
-- Quality profile support
-- Language profile support
-- Docker-compatible configuration
+- Plex integration, Docker support
 
 ### Features
 
 Natural Language Commands:
 - Download Inception in 4K English
 - Download Supernatural season 4
-- Search for Avatar
 - Radarr status / Sonarr status
 
 ### Requirements
 
-- Python 3 (stdlib only, no pip dependencies)
+- Python 3 (stdlib only)
 - Radarr v3+
 - Sonarr v3+
 
